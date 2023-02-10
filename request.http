@@ -1,0 +1,44 @@
+### post-data
+POST http://localhost:3500/post-data/express?lang=js
+Content-Type: application/json
+
+{
+  "name": "ali"
+}
+
+### create task item
+POST http://localhost:3500/tasks/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsaXJlemExIiwiaWF0IjoxNjc1ODAyODI4LCJleHAiOjE2NzY2NjY4Mjh9.CVGj9PfhSLbXHk6d958NsSKLT_UVVQRgZU8-4EaaOIw
+
+{
+  "title": "hiiiiiiii",
+  "text": "description dasdasdsdasd",
+  "category": "nodejs"
+}
+
+### get all task item
+GET http://localhost:3500/tasks/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsaXJlemExIiwiaWF0IjoxNjc1ODAyODI4LCJleHAiOjE2NzY2NjY4Mjh9.CVGj9PfhSLbXHk6d958NsSKLT_UVVQRgZU8-4EaaOIw
+
+### get task item
+GET http://localhost:3500/tasks/63e4e9ae2b0086129469a042
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsaXJlemExIiwiaWF0IjoxNjc1ODAyODI4LCJleHAiOjE2NzY2NjY4Mjh9.CVGj9PfhSLbXHk6d958NsSKLT_UVVQRgZU8-4EaaOIw
+
+### delete task item
+DELETE http://localhost:3500/tasks/remove/63e4e9ae2b0086129469a042
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsaXJlemExIiwiaWF0IjoxNjc1ODAyODI4LCJleHAiOjE2NzY2NjY4Mjh9.CVGj9PfhSLbXHk6d958NsSKLT_UVVQRgZU8-4EaaOIw
+
+### update task item
+PUT http://localhost:3500/tasks/update/63e4ea9d2b0086129469a055
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsaXJlemExIiwiaWF0IjoxNjc1ODAyODI4LCJleHAiOjE2NzY2NjY4Mjh9.CVGj9PfhSLbXHk6d958NsSKLT_UVVQRgZU8-4EaaOIw
+
+{
+  "title": "ali jooon",
+  "text": "udfdsfsdfsdf",
+  "category": "sdfsfs"
+}
